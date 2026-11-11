@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ivra · Caso de estudio · Aleja Moreno</title>
+<meta name="description" content="Caso de estudio de Ivra: marca y app de un banco digital cuya IA decide y actúa. Por Aleja Moreno.">
+<meta name="theme-color" content="#120F1E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ivra · Tu dinero va un paso adelante">
+<meta property="og:description" content="Marca, campaña y app de un banco digital cuya IA decide y actúa. Proyecto conceptual de Aleja Moreno.">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/ivra.css">
+</head>
+<body>
+
+<!-- El punto de la "i": un solo elemento controla todo el recorrido (js/ivra.js → Dot) -->
+<div id="dot" aria-hidden="true"><i></i></div>
+<div id="rail" aria-hidden="true"></div>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="mono who" href="https://claude.ai/artifact/YJTEaRSG1YnHR7VLffyKBC" target="_blank" rel="noopener">← Aleja Moreno · Portafolio</a>
+    <nav class="bar-nav" aria-label="Secciones del caso">
+      <a class="mono bar-link" href="#s03">Marca</a>
+      <a class="mono bar-link" href="#s09">App</a>
+      <a class="mono bar-link" href="#prueba">Prototipo</a>
+      <a class="mono bar-link" href="#s13">Sistema</a>
+    </nav>
+    <div class="bar-end">
+      <a class="mono bar-link bar-next" href="https://claude.ai/artifact/YJTEaRSG1YnHR7VLffyKBC#relevo" target="_blank" rel="noopener">Siguiente caso →</a>
+      <a class="bar-cta" href="https://claude.ai/artifact/YJTEaRSG1YnHR7VLffyKBC#contacto" target="_blank" rel="noopener">Hablemos</a>
+      <button class="mono bar-menu" type="button" aria-expanded="false" aria-controls="menu-caso">Menú</button>
+    </div>
+  </div>
+  <div class="bar-sheet" id="menu-caso" hidden>
+    <nav class="wrap" aria-label="Menú del caso">
+      <a href="#s03">Marca</a>
+      <a href="#s09">App</a>
+      <a href="#prueba">Prototipo</a>
+      <a href="#s13">Sistema</a>
+      <a href="https://claude.ai/artifact/YJTEaRSG1YnHR7VLffyKBC#relevo" target="_blank" rel="noopener">Siguiente caso →</a>
+      <a href="https://claude.ai/artifact/YJTEaRSG1YnHR7VLffyKBC" target="_blank" rel="noopener">← Volver al portafolio</a>
+      <a class="bar-cta" href="https://claude.ai/artifact/YJTEaRSG1YnHR7VLffyKBC#contacto" target="_blank" rel="noopener">Hablemos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 01 · Hero -->
+  <section class="s hero" id="s01" data-bg="noche">
+    <div class="wrap hero-in">
+      <h1 class="logo" aria-label="Ivra">
+        <svg viewBox="-10 -1012 2455 1047" role="img" aria-label="Logo de Ivra">
+          <path d="M0,0 L229.2,0 L229.2,-678.6 L0,-573 Z" fill="#FFFFFF"/>
+          <circle id="heroDot" class="svgdot" cx="289.2" cy="-887.4" r="114.6" fill="#3DFFB6"/>
+          <path d="M734.2 -110 657.2 -111 844.2 -573H1087.2L823.2 0H562.2L298.2 -573H551.2Z M1082.2 -573H1316.2L1350.2 -370V0H1121.2V-377ZM1611.2 -584V-389Q1579.2 -395 1552.7 -397.5Q1526.2 -400 1504.2 -400Q1463.2 -400 1428.2 -384.5Q1393.2 -369 1371.7 -331.5Q1350.2 -294 1350.2 -228L1308.2 -280Q1317.2 -342 1332.7 -397.5Q1348.2 -453 1375.2 -496.5Q1402.2 -540 1442.7 -565.0Q1483.2 -590 1542.2 -590Q1558.2 -590 1575.2 -588.5Q1592.2 -587 1611.2 -584Z M2159.2 0 2132.2 -204 2160.2 -286 2132.2 -367 2159.2 -573H2397.2L2359.2 -287L2397.2 0ZM2210.2 -286Q2198.2 -195 2157.7 -126.5Q2117.2 -58 2053.7 -20.5Q1990.2 17 1908.2 17Q1825.2 17 1761.2 -21.0Q1697.2 -59 1661.7 -127.5Q1626.2 -196 1626.2 -286Q1626.2 -378 1661.7 -446.5Q1697.2 -515 1761.2 -552.5Q1825.2 -590 1908.2 -590Q1990.2 -590 2053.7 -553.0Q2117.2 -516 2158.2 -447.5Q2199.2 -379 2210.2 -286ZM1857.2 -286Q1857.2 -248 1872.7 -219.0Q1888.2 -190 1916.2 -173.0Q1944.2 -156 1980.2 -156Q2017.2 -156 2051.2 -173.0Q2085.2 -190 2111.2 -219.0Q2137.2 -248 2149.2 -286Q2137.2 -324 2111.2 -353.5Q2085.2 -383 2051.2 -400.0Q2017.2 -417 1980.2 -417Q1944.2 -417 1916.2 -400.0Q1888.2 -383 1872.7 -353.5Q1857.2 -324 1857.2 -286Z" fill="#FFFFFF"/>
+        </svg>
+      </h1>
+      <p class="tagline">Tu dinero va un paso adelante.</p>
+    </div>
+    <dl class="meta wrap">
+      <div><dt>Rol</dt><dd>Estrategia de marca, UX y UI</dd></div>
+      <div><dt>Año</dt><dd><span class="pend">[AÑO]</span></dd></div>
+      <div><dt>Tipo</dt><dd>Proyecto conceptual</dd></div>
+      <div><dt>Entregables</dt><dd>Marca, campaña, app y prototipo</dd></div>
+    </dl>
+    <p class="scroll-hint mono" aria-hidden="true">Desliza</p>
+  </section>
+
+  <!-- 02 · El reto -->
+  <section class="s" id="s02">
+    <div class="wrap">
+      <p class="eyebrow">El reto</p>
+      <h2 class="h2 in">Diseñar confianza en un banco que actúa solo.</h2>
+      <p class="lead in">Ivra es un banco digital cuya IA no sugiere: decide y actúa. Eso rompe el supuesto de toda app bancaria, donde cada movimiento lo inicia el usuario. El reto fue diseñar una experiencia en la que delegar tu dinero se sienta seguro.</p>
+      <div class="grid3 cards">
+        <article class="card in"><h3>El problema</h3><p>La banca digital quitó las filas, pero el trabajo sigue siendo tuyo: revisar, calcular, no olvidar.</p></article>
+        <article class="card in"><h3>La idea</h3><p>Un banco autónomo: tú pones las metas y le hablas; Ivra se adelanta y ejecuta.</p></article>
+        <article class="card in"><h3>La tensión</h3><p>Cuanto más hace la IA, menos control siente la persona. Todo el UX resuelve eso.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · El nombre -->
+  <section class="s" id="s03">
+    <div class="wrap">
+      <p class="eyebrow">El nombre</p>
+      <h2 class="mega in">Ivra</h2>
+      <p class="lead in">Corto, se dice igual en cualquier idioma y guarda tres ideas.</p>
+      <div class="grid3 words">
+        <div class="in"><p class="word" aria-label="IA"><b>I</b><b>A</b></p><p>La inteligencia que mueve tu dinero por ti.</p></div>
+        <div class="in"><p class="word" aria-label="vibra"><b>v</b><b>i</b><span>b</span><b>r</b><b>a</b></p><p>La energía de una generación que vive rápido.</p></div>
+        <div class="in"><p class="word" aria-label="libra"><span>l</span><b>i</b><span>b</span><b>r</b><b>a</b></p><p>Suena a la palabra que siempre ha unido dinero y equilibrio.</p></div>
+      </div>
+      <p class="foot in">Antes de llegar aquí descarté diez nombres por estar ocupados en el sector financiero.</p>
+    </div>
+  </section>
+
+  <!-- 04 · El símbolo -->
+  <section class="s" id="s04">
+    <div class="wrap">
+      <p class="eyebrow">El símbolo</p>
+      <h2 class="h2 in">El punto que se adelanta.</h2>
+      <p class="lead in">En cualquier "i" el punto está encima. En Ivra está lanzado hacia adelante, siguiendo la diagonal del palito. Es la IA anticipándose a lo que viene, y es el ícono de la app.</p>
+      <div class="sym">
+        <figure class="sym-fig">
+          <svg id="symSvg" viewBox="-170 -1080 640 1160" role="img" aria-label="Construcción del símbolo de Ivra: el corte del palito a 24,7 grados y la trayectoria del punto">
+            <g class="guides">
+              <line class="g draw" x1="-150" y1="-503.9" x2="420" y2="-766.5"/>
+              <line class="g draw dash" x1="0" y1="0" x2="300" y2="-920"/>
+              <line class="g draw" x1="0" y1="50" x2="229.2" y2="50"/>
+              <line class="g draw" x1="0" y1="35" x2="0" y2="65"/>
+              <line class="g draw" x1="229.2" y1="35" x2="229.2" y2="65"/>
+              <line class="g draw" x1="174.6" y1="-1040" x2="403.8" y2="-1040"/>
+              <line class="g draw" x1="174.6" y1="-1055" x2="174.6" y2="-1025"/>
+              <line class="g draw" x1="403.8" y1="-1055" x2="403.8" y2="-1025"/>
+              <path class="g draw" d="M 90 -614.4 A 90 90 0 0 0 81.8 -651.9" fill="none"/>
+            </g>
+            <path d="M0,0 L229.2,0 L229.2,-678.6 L0,-573 Z" fill="#FFFFFF"/>
+            <circle id="symDot" class="svgdot" cx="289.2" cy="-887.4" r="114.6" fill="#3DFFB6"/>
+            <g class="glabels">
+              <text x="-150" y="-540">24,7°</text>
+              <text x="114.6" y="95" text-anchor="middle">= Ø</text>
+            </g>
+          </svg>
+        </figure>
+        <ol class="steps-list">
+          <li class="in"><span class="num">1</span><div><h3>El corte</h3><p>El tope del palito es perpendicular al trazo de la "v": 24,7°.</p></div></li>
+          <li class="in"><span class="num">2</span><div><h3>La trayectoria</h3><p>El punto viaja sobre esa misma diagonal. Se adelanta.</p></div></li>
+          <li class="in"><span class="num">3</span><div><h3>La medida</h3><p>El palito tiene el grosor de la "r" y el punto su mismo diámetro.</p></div></li>
+        </ol>
+      </div>
+      <p class="closer in">Ese ángulo de 24,7° se volvió el gesto de toda la marca: aparece en botones, tarjetas y paneles.</p>
+    </div>
+  </section>
+
+  <!-- 05 · Color y tipografía -->
+  <section class="s" id="s05">
+    <div class="wrap">
+      <p class="eyebrow">El sistema</p>
+      <h2 class="h2 in">Base oscura, color solo cuando algo importa.</h2>
+      <div class="swatches">
+        <div class="sw in" style="--c:#120F1E"><span class="chip-c bordered"></span><b>Noche</b><span class="mono">#120F1E</span><p>base y confianza</p></div>
+        <div class="sw in" style="--c:#FFFFFF"><span class="chip-c"></span><b>Blanco</b><span class="mono">#FFFFFF</span><p>texto y aire</p></div>
+        <div class="sw in" style="--c:#FF3FA4"><span class="chip-c"></span><b>Rosa eléctrico</b><span class="mono">#FF3FA4</span><p>lo que haces tú</p></div>
+        <div class="sw in" style="--c:#3DFFB6"><span class="chip-c"></span><b>Menta neón</b><span class="mono">#3DFFB6</span><p>lo que hizo Ivra</p></div>
+      </div>
+      <div class="rule in">
+        <p>Rosa es lo que haces tú. Menta es lo que hizo Ivra. Nunca se mezclan en un mismo elemento, así que de un vistazo sabes qué pasó por tus manos y qué no.</p>
+      </div>
+      <div class="ratio in" aria-label="Proporción: 70 noche, 20 blanco, 10 color">
+        <div class="ratio-bar"><span style="flex:70" class="r-noche"></span><span style="flex:20" class="r-blanco"></span><span style="flex:5" class="r-rosa"></span><span style="flex:5" class="r-menta"></span></div>
+        <p class="mono">70 noche · 20 blanco · 10 color</p>
+      </div>
+      <div class="type">
+        <div class="type-card in">
+          <p class="specimen disp">Aa</p>
+          <div><h3>Unbounded ExtraBold</h3><p>Titulares. Ancha, pesada y con cortes rectos que se sienten del futuro.</p></div>
+        </div>
+        <div class="type-card in">
+          <p class="specimen"><span>Aa</span> <span class="mono-s">$12.400</span></p>
+          <div><h3>Geist · Geist Mono</h3><p>Textos, interfaz y cifras. Clara y neutra, para que lo importante se entienda a la primera.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · Así habla -->
+  <section class="s surf" id="s06">
+    <div class="wrap voice">
+      <div>
+        <p class="eyebrow">La voz</p>
+        <h2 class="h2 in">Como alguien que ya hizo la tarea por ti.</h2>
+        <p class="lead in">Corto, cercano y sin letra pequeña. Nada de lenguaje bancario.</p>
+        <table class="dodont in">
+          <thead><tr><th scope="col">Así sí</th><th scope="col">Así no</th></tr></thead>
+          <tbody>
+            <tr><td>Me adelanté: pagué la luz antes del recargo.</td><td>Su pago ha sido procesado exitosamente.</td></tr>
+            <tr><td>Te quedan $380.000 libres este mes.</td><td>Saldo disponible: $380.000.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="chat" id="chat" aria-label="Frases de Ivra">
+        <div class="bub"><span class="av"></span><p>"Me adelanté: pagué la luz antes del recargo."</p></div>
+        <div class="bub"><span class="av"></span><p>"Listo, le mandé $48.000 a Sofi."</p></div>
+        <div class="bub"><span class="av"></span><p>"Mientras dormías, ahorré por ti."</p></div>
+        <div class="bub"><span class="av"></span><p>"Ojo, ese cobro no lo reconozco. ¿Lo bloqueo?"</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · La marca viva -->
+  <section class="s stage" id="s07">
+    <div class="wrap">
+      <p class="eyebrow">Aplicaciones</p>
+      <h2 class="h2 in">Una sola luz de color por pieza.</h2>
+      <p class="lead in">Estudio oscuro, materiales mate y encuadres cerrados. La marca funciona como objeto y como estilo de vida.</p>
+      <div class="bento">
+        <figure class="b-persona"><img src="img/escultura-persona.webp" alt="Mujer de perfil mirando una escultura del símbolo de Ivra con una esfera menta iluminada" loading="lazy" width="1199" height="1312"><figcaption>Instalación</figcaption></figure>
+        <figure class="b-rostro"><img src="img/tarjeta-rostro.webp" alt="Mujer joven sosteniendo la tarjeta negra de Ivra junto a su rostro, con luz rosa lateral" loading="lazy" width="1536" height="1024"><figcaption>Tarjeta</figcaption></figure>
+        <figure class="b-gorra"><img src="img/gorra.webp" alt="Hombre joven con gorra negra bordada con el símbolo de Ivra, luz menta de fondo" loading="lazy" width="1000" height="1500"><figcaption>Merch</figcaption></figure>
+        <figure class="b-sobre"><img src="img/sobre.webp" alt="Mano sosteniendo un sobre negro con el logo de Ivra y forro rosa" loading="lazy" width="1200" height="1000"><figcaption>Bienvenida</figcaption></figure>
+        <figure class="b-reloj"><img src="img/smartwatch.webp" alt="Reloj inteligente mostrando la notificación Ivra actuó más 12.400 pesos" loading="lazy" width="1000" height="1500"><figcaption>Wearable</figcaption></figure>
+        <figure class="b-historia"><img src="img/historia-freelance.webp" alt="Pieza vertical con un joven sonriendo al celular y el titular Freelance sin estrés" loading="lazy" width="900" height="1599"><figcaption>Historia</figcaption></figure>
+        <figure class="b-lector"><img src="img/escultura-lector.webp" alt="Mano pasando la tarjeta de Ivra por un lector con forma del símbolo de la marca" loading="lazy" width="1000" height="1500"><figcaption>Lector</figcaption></figure>
+        <figure class="b-hoodie"><img src="img/hoodie.webp" alt="Vista de espalda de un hombre con hoodie negro que dice Tu dinero va un paso adelante" loading="lazy" width="1400" height="933"><figcaption>Merch</figcaption></figure>
+        <figure class="b-valla"><img src="img/valla-noche.webp" alt="Valla nocturna con una mujer en bicicleta y el titular Tu plata se mueve sola, tú vives" loading="lazy" width="1672" height="941"><figcaption>Vía pública</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 · Transición a la app -->
+  <section class="s08" id="s08">
+    <div class="s08-sticky">
+      <div class="s08-text" id="t08">
+        <h2 class="h2">Y entonces, la parte difícil: diseñar la app.</h2>
+        <p class="lead">Una marca puede prometer que la IA actúa sola. Una app tiene que lograr que alguien se lo crea.</p>
+      </div>
+      <div class="morph" id="morph" aria-hidden="true">
+        <img class="m-icon" src="img/app-icon.webp" alt="">
+        <img class="m-screen" src="pantallas/inicio.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 · El problema de UX -->
+  <section class="s" id="s09">
+    <div class="wrap">
+      <p class="eyebrow">El problema</p>
+      <h2 class="h2 in"><span class="slot"></span>Nadie le entrega su plata a algo que actúa solo.</h2>
+      <p class="lead in">La pregunta de diseño dejó de ser cómo navegar y pasó a ser cómo confiar. La resolví con tres principios.</p>
+      <ol class="grid3 principles">
+        <li class="card in"><span class="num">1</span><h3>Control</h3><p>Todo lo que hace la IA se puede deshacer en un toque.</p></li>
+        <li class="card in"><span class="num">2</span><h3>Transparencia</h3><p>Cada acción explica por qué se hizo, antes de decir cuánto costó.</p></li>
+        <li class="card in"><span class="num">3</span><h3>Autonomía graduable</h3><p>Cada persona decide cuánto puede hacer la IA, desde el primer minuto.</p></li>
+      </ol>
+      <div class="ux-grid">
+        <div class="hyp in">
+          <p class="tag-hyp mono">Hipótesis de partida · no son hallazgos</p>
+          <ul>
+            <li><b>La fricción no es la app, es la decisión.</b> Transferir toma 20 segundos; decidir cuánto ahorrar toma semanas.</li>
+            <li><b>Delegar da miedo si no ves el porqué.</b> Aceptamos que un algoritmo elija la música, no que mueva la plata.</li>
+            <li><b>El ingreso variable rompe el presupuesto.</b> Quien factura distinto cada mes no puede planear con reglas fijas.</li>
+          </ul>
+        </div>
+        <div class="persona in">
+          <p class="mono mut">Persona</p>
+          <h3>Mariana, 26</h3>
+          <p class="mut">Diseñadora freelance, Bogotá, ingreso variable.</p>
+          <dl>
+            <div><dt>Quiere</dt><dd>Viajar el otro año sin dejar de pagar sus cuentas a tiempo.</dd></div>
+            <div><dt>La frena</dt><dd>Sentir que no sabe de finanzas y no confiar en algo automático.</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="hmw in">
+        <p class="mono mut">¿Cómo podríamos…?</p>
+        <ul>
+          <li>…hacer que pedirle algo al banco sea tan fácil como mandar un mensaje.</li>
+          <li>…dejar claro qué hizo la IA, por qué lo hizo y cómo revertirlo.</li>
+          <li>…permitir que cada quien decida cuánta libertad le da.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · El flujo -->
+  <section class="s" id="s10">
+    <div class="wrap">
+      <p class="eyebrow">El flujo</p>
+      <h2 class="h2 in"><span class="slot"></span>Todo termina en una explicación que se puede deshacer.</h2>
+      <p class="legend mono in"><span class="lg-u">● Lo haces tú</span><span class="lg-ia">● Lo hace Ivra</span></p>
+      <div class="flow">
+        <div class="lane in">
+          <p class="lane-name mono">Entrada</p>
+          <ol class="nodes">
+            <li class="node">Descarga</li><li class="node">Verificación</li><li class="node u">Elige nivel de autonomía</li><li class="node">Inicio</li>
+          </ol>
+        </div>
+        <div class="lane in">
+          <p class="lane-name mono">Uso diario</p>
+          <ol class="nodes">
+            <li class="node q">¿Quién inicia?</li>
+            <li class="branch"><span class="node u">Le pide algo a Ivra <small>voz o texto</small></span><span class="or mono">o</span><span class="node ia">Ivra se adelanta sola</span></li>
+            <li class="node ia-soft">Ivra ejecuta y responde en el chat</li><li class="node">Notificación</li>
+          </ol>
+        </div>
+        <div class="lane in">
+          <p class="lane-name mono">Control</p>
+          <ol class="nodes">
+            <li class="node">Detalle con el porqué</li><li class="node u">Deshacer en un toque</li><li class="node">Ajustar la autonomía</li><li class="node">Movimiento en la cuenta</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · Las pantallas -->
+  <section class="s stage" id="s11">
+    <div class="wrap">
+      <p class="eyebrow">Las pantallas</p>
+      <h2 class="h2 in"><span class="slot"></span>Cinco pantallas que sostienen el concepto.</h2>
+      <div class="screens">
+        <div class="phone-sticky" aria-hidden="true">
+          <div class="phone" id="phone">
+            <img src="pantallas/autonomia.webp" alt="" class="on">
+            <img src="pantallas/inicio.webp" alt="" loading="lazy">
+            <img src="pantallas/chat.webp" alt="" loading="lazy">
+            <img src="pantallas/detalle.webp" alt="" loading="lazy">
+            <img src="pantallas/metas.webp" alt="" loading="lazy">
+          </div>
+        </div>
+        <ol class="sc-steps">
+          <li class="sc" data-i="0"><img class="sc-img" width="390" height="844" src="pantallas/autonomia.webp" alt="Pantalla del onboarding para elegir el nivel de autonomía: te pregunta, te avisa o lo hace sola, con un límite por operación" loading="lazy"><p class="mono mut">Paso 1</p><h3>Nivel de autonomía</h3><p>La primera decisión del onboarding, no un ajuste escondido: cuánta libertad le das. Tres niveles: te pregunta, te avisa, lo hace sola. Más un límite por operación que puedes mover.</p></li>
+          <li class="sc" data-i="1"><img class="sc-img" width="390" height="844" src="pantallas/inicio.webp" alt="Pantalla de inicio con el saldo, la tarjeta de lo último que hizo Ivra y los movimientos" loading="lazy"><p class="mono mut">Paso 2</p><h3>Inicio</h3><p>Lo bancario de siempre (saldo, tarjeta, movimientos) más una sola tarjeta destacada: lo último que hizo Ivra, con lo que te ahorró y el acceso a deshacerlo.</p></li>
+          <li class="sc" data-i="2"><img class="sc-img" width="390" height="844" src="pantallas/chat.webp" alt="Pantalla del chat con Ivra con ejemplos de lo que se le puede pedir" loading="lazy"><p class="mono mut">Paso 3</p><h3>Chat con Ivra</h3><p>El centro del producto. Voz o texto, con ejemplos visibles de lo que puedes pedir. Cada respuesta trae su acción ya hecha y su comprobante.</p></li>
+          <li class="sc" data-i="3"><img class="sc-img" width="390" height="844" src="pantallas/detalle.webp" alt="Pantalla de detalle que explica por qué Ivra pagó la luz, cuánto ahorró y el botón para devolverlo" loading="lazy"><p class="mono mut">Paso 4</p><h3>Detalle y deshacer</h3><p>Qué hizo, por qué lo hizo, cuánto te ahorró y cómo quedó tu saldo. Deshacer vive aquí, junto al susto, no en el historial.</p></li>
+          <li class="sc" data-i="4"><img class="sc-img" width="390" height="844" src="pantallas/metas.webp" alt="Pantalla de metas que compara llegar en marzo con llegar en enero con dos domicilios menos" loading="lazy"><p class="mono mut">Paso 5</p><h3>Metas y tu yo del futuro</h3><p>Dos barras comparadas: como vas hoy llegas en marzo, con dos domicilios menos llegas en enero. Ivra propone el cambio y tú decides.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · Pruébala -->
+  <section class="s" id="prueba">
+    <div class="wrap try">
+      <div class="try-text">
+        <h2 class="h2 in"><span class="slot"></span>Pruébala tú.</h2>
+        <p class="lead in">Prototipo navegable con el flujo completo. Empieza por "Crear mi cuenta", elige qué tanto dejas que Ivra haga sola y mira cómo cambia su forma de actuar en el chat.</p>
+        <div class="hint in">
+          <p class="mono mut">Pista</p>
+          <p>Si eliges "Te pregunta", Ivra te pide permiso antes de mover un peso. Si eliges "Lo hace sola", ejecuta y te cuenta. Ese contraste es el corazón del caso.</p>
+        </div>
+        <a class="btn-cut" href="prototipo/index.html" target="_blank" rel="noopener">Abrir en pantalla completa ↗</a>
+      </div>
+      <div class="try-frame">
+        <iframe src="prototipo/index.html" width="430" height="1040" loading="lazy" title="Prototipo de la app Ivra"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 · Sistema de diseño -->
+  <section class="s" id="s13">
+    <div class="wrap">
+      <p class="eyebrow">El sistema</p>
+      <h2 class="h2 in"><span class="slot"></span>Componentes que nacen del concepto.</h2>
+      <div class="ds">
+        <div class="ds-item in">
+          <div class="ds-demo">
+            <div class="c-action">
+              <span class="c-chip mono"><i></i>Ivra actuó · hace 2 min</span>
+              <p class="c-what">Te pagué la luz antes de que subiera</p>
+              <p class="c-why">La factura vencía mañana y después cobraban más.</p>
+              <button class="c-undo" type="button">Deshacer</button>
+            </div>
+          </div>
+          <h3>Tarjeta de acción</h3><p>Qué hizo + por qué + deshacer. Borde menta.</p>
+        </div>
+        <div class="ds-item in">
+          <div class="ds-demo center"><span class="c-chip mono"><i></i>Ivra actuó</span></div>
+          <h3>Chip "Ivra actuó"</h3><p>Etiqueta en mono con el punto menta. Marca todo lo que no pasó por tus manos.</p>
+        </div>
+        <div class="ds-item in">
+          <div class="ds-demo">
+            <div class="c-auto" role="radiogroup" aria-label="Nivel de autonomía">
+              <button type="button" role="radio" aria-checked="false">Te pregunta</button>
+              <button type="button" role="radio" aria-checked="true" class="sel">Te avisa</button>
+              <button type="button" role="radio" aria-checked="false">Lo hace sola</button>
+            </div>
+            <label class="c-lim"><span class="mono mut">Límite por operación</span><input type="range" id="lim" min="50000" max="2000000" step="50000" value="500000"><b id="limv">$500.000</b></label>
+          </div>
+          <h3>Selector de autonomía</h3><p>Tres opciones con estado seleccionado en menta y un límite ajustable.</p>
+        </div>
+        <div class="ds-item in">
+          <div class="ds-demo">
+            <button type="button" class="c-rule" aria-pressed="true"><span><b>Pagar las cuentas a tiempo</b><small>luz, agua e internet</small></span><i class="sw-t"></i></button>
+            <button type="button" class="c-rule" aria-pressed="false"><span><b>Avisarme si me paso con los domicilios</b><small>pausada</small></span><i class="sw-t"></i></button>
+          </div>
+          <h3>Interruptor de regla</h3><p>Prendido en menta, pausado en gris. Lo que pediste hablando queda visible y apagable.</p>
+        </div>
+        <div class="ds-item in">
+          <div class="ds-demo center"><button type="button" class="c-btn">Prender Ivra</button></div>
+          <h3>Botón principal</h3><p>Rosa, con una esquina cortada en el ángulo de la marca.</p>
+        </div>
+        <div class="ds-item in">
+          <div class="ds-demo">
+            <div class="c-bubbles">
+              <p class="b-user">Págale a Sofi la cena</p>
+              <p class="b-ivra"><i></i>Listo, le mandé $48.000 a Sofi.</p>
+            </div>
+          </div>
+          <h3>Burbujas de chat</h3><p>Usuario en rosa con la esquina viva abajo; Ivra en superficie con el punto menta de avatar.</p>
+        </div>
+      </div>
+      <dl class="forms in">
+        <div><dt>Radios</dt><dd>18–28</dd></div>
+        <div><dt>Espaciado base</dt><dd>4</dd></div>
+        <div><dt>Toque mínimo</dt><dd>44</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 14 · Decisiones de UX -->
+  <section class="s" id="s14">
+    <div class="wrap">
+      <p class="eyebrow">Decisiones</p>
+      <h2 class="h2 in"><span class="slot"></span>Cuatro decisiones y por qué las tomé.</h2>
+      <ol class="decisions">
+        <li class="in"><span class="num">01</span><div><h3>El nivel de autonomía va en el onboarding, no en ajustes</h3><p>Escondido en un menú nadie lo tocaría y la IA se sentiría impuesta. Al entrar, el miedo se convierte en una decisión propia.</p></div></li>
+        <li class="in"><span class="num">02</span><div><h3>Cada acción muestra su porqué antes que su monto</h3><p>Con la cifra primero se lee como un cobro sorpresa. Con el motivo arriba, la misma acción se lee como un favor.</p></div></li>
+        <li class="in"><span class="num">03</span><div><h3>Deshacer vive junto a la acción, no en el historial</h3><p>La reversa tiene que estar donde aparece el susto. Si hay que buscarla, la confianza ya se rompió.</p></div></li>
+        <li class="in"><span class="num">04</span><div><h3>Hablar reemplaza al formulario, pero deja rastro visible</h3><p>Pedir en lenguaje natural es rápido e invisible. Por eso cada frase se vuelve una regla que se ve, se edita y se apaga.</p></div></li>
+      </ol>
+      <div class="test in">
+        <p class="mono mut">Qué probaría con usuarios</p>
+        <p>Si al ver "Ivra actuó" la primera reacción es tranquilidad o alarma; qué nivel elige la gente y si lo sube con el tiempo; cuántos usan deshacer y por qué.</p>
+      </div>
+      <blockquote class="takeaway in">
+        <p class="mono mut">Lo que me llevo</p>
+        <p>Cuando un producto decide por alguien, el diseño deja de ser navegación y pasa a ser confianza: explicar, acotar y dejar salida.</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 15 · Contexto y cierre -->
+  <section class="s" id="s15">
+    <div class="wrap">
+      <p class="eyebrow">Contexto</p>
+      <h2 class="h2 in"><span class="slot"></span>La categoría ya existe. El control, todavía no.</h2>
+      <p class="lead in">Mientras trabajaba el caso, el mercado se movió: Mercado Pago lanzó Mago, un asistente de IA dentro de la billetera para pagar y transferir por voz o texto, aunque ninguna operación se cierra sin la validación final del usuario. Afuera, Rowan de Rocket Money ya cancela suscripciones y automatiza ahorro, y bancos como JPMorgan mueven plata entre cuentas de forma automática. Lo que sigue sin resolverse es justo lo que propone Ivra: elegir el nivel de autonomía desde el primer minuto, entender el porqué de cada acción y poder deshacerla.</p>
+    </div>
+  </section>
+
+  <section class="close" id="cierre">
+    <div class="wrap close-in">
+      <svg class="logo-noche" viewBox="-10 -1012 2455 1047" role="img" aria-label="Logo de Ivra en versión noche">
+        <path d="M0,0 L229.2,0 L229.2,-678.6 L0,-573 Z" fill="#120F1E"/>
+        <circle id="closeDot" class="svgdot" cx="289.2" cy="-887.4" r="114.6" fill="#FF3FA4"/>
+        <path d="M734.2 -110 657.2 -111 844.2 -573H1087.2L823.2 0H562.2L298.2 -573H551.2Z M1082.2 -573H1316.2L1350.2 -370V0H1121.2V-377ZM1611.2 -584V-389Q1579.2 -395 1552.7 -397.5Q1526.2 -400 1504.2 -400Q1463.2 -400 1428.2 -384.5Q1393.2 -369 1371.7 -331.5Q1350.2 -294 1350.2 -228L1308.2 -280Q1317.2 -342 1332.7 -397.5Q1348.2 -453 1375.2 -496.5Q1402.2 -540 1442.7 -565.0Q1483.2 -590 1542.2 -590Q1558.2 -590 1575.2 -588.5Q1592.2 -587 1611.2 -584Z M2159.2 0 2132.2 -204 2160.2 -286 2132.2 -367 2159.2 -573H2397.2L2359.2 -287L2397.2 0ZM2210.2 -286Q2198.2 -195 2157.7 -126.5Q2117.2 -58 2053.7 -20.5Q1990.2 17 1908.2 17Q1825.2 17 1761.2 -21.0Q1697.2 -59 1661.7 -127.5Q1626.2 -196 1626.2 -286Q1626.2 -378 1661.7 -446.5Q1697.2 -515 1761.2 -552.5Q1825.2 -590 1908.2 -590Q1990.2 -590 2053.7 -553.0Q2117.2 -516 2158.2 -447.5Q2199.2 -379 2210.2 -286ZM1857.2 -286Q1857.2 -248 1872.7 -219.0Q1888.2 -190 1916.2 -173.0Q1944.2 -156 1980.2 -156Q2017.2 -156 2051.2 -173.0Q2085.2 -190 2111.2 -219.0Q2137.2 -248 2149.2 -286Q2137.2 -324 2111.2 -353.5Q2085.2 -383 2051.2 -400.0Q2017.2 -417 1980.2 -417Q1944.2 -417 1916.2 -400.0Q1888.2 -383 1872.7 -353.5Q1857.2 -324 1857.2 -286Z" fill="#120F1E"/>
+      </svg>
+      <p class="close-tag">Tu dinero va un paso adelante.</p>
+      <nav class="close-links" aria-label="Seguir">
+        <a href="https://claude.ai/artifact/YJTEaRSG1YnHR7VLffyKBC#relevo" target="_blank" rel="noopener">Ver el siguiente caso →</a>
+        <a href="https://claude.ai/artifact/YJTEaRSG1YnHR7VLffyKBC#contacto" target="_blank" rel="noopener">Hablemos →</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/ivra.js"></script>
+<script src="js/nav.js"></script>
+
+</body>
+</html>
